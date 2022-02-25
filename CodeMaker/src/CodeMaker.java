@@ -65,11 +65,6 @@ public class CodeMaker {
 
 	} // getFileContents
 
-	/**
-	 * @param contents
-	 * @param cipherCode
-	 * writes the ciphertext of the message in a file
-	 */
 	public static void writeFileContents(String[] contents, int cipher) {
 		FileWriter myWriter;
 		try {
