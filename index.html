@@ -20,23 +20,35 @@
         header h1 {
             margin: 0;
         }
+        .contact-info {
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
         .links {
-            margin-top: 10px;
+            margin-bottom: 15px;
         }
         .links a {
             margin: 0 10px;
             color: white;
-            text-decoration: underline; /* 添加下划线 */
+            text-decoration: underline;
             font-size: 18px;
         }
         .links a:hover {
-            text-decoration: none; /* 鼠标悬停时移除下划线 */
+            text-decoration: none;
         }
         img.profile {
             margin-top: 20px;
-            width: 150px; /* 控制头像宽度 */
-            height: 150px; /* 控制头像高度 */
-            border-radius: 50%; /* 将头像设置为圆形 */
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -61,7 +73,7 @@
         img.resume {
             margin-top: 20px;
             width: 100%;
-            max-width: 1000px; /* 增加简历图片的最大宽度 */
+            max-width: 1000px;
             height: auto;
             display: block;
             margin-left: auto;
@@ -88,25 +100,35 @@
 
 <header>
     <h1>Canran (Bruce) Lin</h1>
+
+    <!-- Contact Information below the name -->
+    <div class="contact-info">
+        <p>Phone: +1 (778)-676-6178 | Email: 
+            <a href="mailto:bruce.lcr@outlook.com">bruce.lcr@outlook.com</a> |
+            <a href="mailto:c42lin@uwaterloo.ca">c42lin@uwaterloo.ca</a>
+        </p>
+    </div>
+
+    <!-- Social media links above the contact info -->
     <div class="links">
         <a href="https://github.com/Brucelcr" target="_blank">GitHub</a>
         <a href="https://linkedin.com/in/bruce-lin-186752308/" target="_blank">LinkedIn</a>
-        <a href="https://www.instagram.com/bruce.lcr/" target="_blank">Instagram</a> <!-- Replace with your Instagram link -->
+        <a href="https://instagram.com" target="_blank">Instagram</a> <!-- Replace with your Instagram link -->
     </div>
 </header>
 
-<!-- 头像在页面顶部，并居中显示 -->
+<!-- Display the profile photo at the top and center -->
 <img src="myImage.jpg" alt="Bruce Lin's Photo" class="profile">
 
-<!-- 文字框显示在头像下方 -->
+<!-- Description box below the profile photo -->
 <div class="description-box">
     <p>Hi, I'm Canran (Bruce) Lin, a Computer Science student at the University of Waterloo. I have experience in AI development, web scraping, and translation tools. I enjoy working with Python, C, and web technologies.</p>
 </div>
 
-<!-- 显示简历图片并居中，且增加宽度 -->
+<!-- Display the resume image and center it, with increased width -->
 <img src="BruceResume.jpg" alt="Bruce Lin's Resume" class="resume">
 
-<!-- 将下载按钮居中放置在页面的最下方 -->
+<!-- Download link at the bottom -->
 <a href="BruceResume.pdf" class="download-link" download>Download My Resume</a>
 
 </body>
