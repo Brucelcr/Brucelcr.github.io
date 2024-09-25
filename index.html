@@ -10,6 +10,13 @@
             background-color: #ffffff; /* 设置背景为纯白色 */
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* 占满整个视窗高度 */
+        }
+        .container {
+            text-align: center;
         }
         header {
             background-color: #333;
@@ -18,6 +25,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            width: 100%;
+            position: relative;
         }
         header img {
             margin-left: 20px;
@@ -25,9 +34,8 @@
             height: auto;
         }
         .name {
-            flex-grow: 1;
             text-align: center;
-            font-size: 24px;
+            font-size: 48px; /* 将名字的字体变大 */
             margin: 0;
         }
         .links {
@@ -42,87 +50,24 @@
         .links a:hover {
             text-decoration: none;
         }
-        img.profile {
-            margin-top: 20px;
-            width: 150px;
-            height: auto;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .description-box {
-            margin-top: 15px;
-            padding: 10px;
-            width: 80%;
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .description-box p {
-            margin: 0;
-            font-size: 16px;
-            color: #333;
-        }
-        img.resume {
-            margin-top: 20px;
-            width: 100%;
-            max-width: 1000px;
-            height: auto;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .download-link {
-            display: block;
-            margin: 30px auto;
-            padding: 10px 20px;
-            background-color: #333;
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            border-radius: 5px;
-            width: fit-content;
-            position: relative;
-        }
-        .download-link:hover {
-            background-color: #555;
-        }
     </style>
 </head>
 <body>
 
-<header>
-    <!-- 滑铁卢大学的图标在左边 -->
-    <img src="uwicon.png" alt="University of Waterloo Icon">
+<div class="container">
+    <!-- Header with icon on the left and links on the right -->
+    <header>
+        <img src="uwicon.png" alt="University of Waterloo Icon">
+        <div class="links">
+            <a href="å://github.com/Brucelcr" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/bruce-lin-186752308/" target="_blank">LinkedIn</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a> <!-- Replace with your Instagram link -->
+        </div>
+    </header>
 
-    <!-- 中间显示名字 -->
+    <!-- Name centered in the middle of the screen with a larger font -->
     <h1 class="name">Canran (Bruce) Lin</h1>
-
-    <!-- 右边显示社交链接 -->
-    <div class="links">
-        <a href="https://github.com/Brucelcr" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/bruce-lin-186752308/" target="_blank">LinkedIn</a>
-        <a href="https://instagram.com" target="_blank">Instagram</a> <!-- Replace with your Instagram link -->
-    </div>
-</header>
-
-<!-- Display the profile photo at the top and center, keep original shape -->
-<img src="myP.jpg" alt="Bruce Lin's Photo" class="profile">
-
-<!-- Description box below the profile photo -->
-<div class="description-box">
-    <p>Hi, I'm Canran (Bruce) Lin, a Computer Science student at the University of Waterloo. I have experience in AI development, web scraping, and translation tools. I enjoy working with Python, C, and web technologies.</p>
 </div>
-
-<!-- Display the resume image and center it, with increased width -->
-<img src="BruceResume.jpg" alt="Bruce Lin's Resume" class="resume">
-
-<!-- Download link at the bottom -->
-<a href="BruceResume.pdf" class="download-link" download>Download My Resume</a>
 
 </body>
 </html>
