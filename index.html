@@ -17,15 +17,23 @@
             color: white;
             padding: 20px 0;
         }
-        img {
+        img.profile {
+            margin-top: 20px;
+            width: 150px; /* Set the desired width for the profile photo */
+            height: 150px; /* Set the desired height for the profile photo */
+            border-radius: 50%; /* To make the image circular */
+        }
+        img.resume {
             margin-top: 20px;
             width: 100%;
             max-width: 800px;
             height: auto;
         }
         .download-link {
-            display: inline-block;
-            margin: 20px 0;
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
             padding: 10px 20px;
             background-color: #333;
             color: white;
@@ -44,11 +52,11 @@
     <h1>Canran (Bruce) Lin</h1>
 </header>
 
-<!-- Display the profile photo -->
-<img src="myImage.jpg" alt="Bruce Lin's Photo">
+<!-- Display the profile photo with a smaller size -->
+<img src="myImage.jpg" alt="Bruce Lin's Photo" class="profile">
 
 <!-- Display the converted resume image -->
-<img src="BruceResume.jpg" alt="Bruce Lin's Resume">
+<img src="BruceResume.jpg" alt="Bruce Lin's Resume" class="resume">
 
 <!-- Provide a download link for the resume -->
 <a href="BruceResume.pdf" class="download-link" download>Download My Resume</a>
