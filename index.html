@@ -8,7 +8,7 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #f4f4f4;
+            background-color: #ffffff; /* 设置背景为纯白色 */
             margin: 0;
             padding: 0;
         }
@@ -16,6 +16,16 @@
             background-color: #333;
             color: white;
             padding: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        header img {
+            position: absolute;
+            left: 20px; /* 调整图标与页面左边的距离 */
+            width: 50px; /* 设置图标的大小 */
+            height: auto;
         }
         header h1 {
             margin: 0;
@@ -46,8 +56,8 @@
         }
         img.profile {
             margin-top: 20px;
-            width: 150px; /* 保持头像的大小 */
-            height: auto; /* 保留原始比例 */
+            width: 150px;
+            height: auto;
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -98,6 +108,9 @@
 <body>
 
 <header>
+    <!-- 添加滑铁卢大学的图标 -->
+    <img src="uwicon.png" alt="University of Waterloo Icon">
+
     <h1>Canran (Bruce) Lin</h1>
 
     <!-- Contact Information below the name -->
@@ -117,7 +130,7 @@
 </header>
 
 <!-- Display the profile photo at the top and center, keep original shape -->
-<img src="myP.jpg" alt="Bruce Lin's Photo" class="profile">
+<img src="imageP.jpg" alt="Bruce Lin's Photo" class="profile">
 
 <!-- Description box below the profile photo -->
 <div class="description-box">
