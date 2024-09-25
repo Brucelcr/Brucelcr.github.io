@@ -46,9 +46,8 @@
         }
         img.profile {
             margin-top: 20px;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
+            width: 150px; /* 保持头像的大小 */
+            height: auto; /* 保留原始比例 */
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -103,7 +102,7 @@
 
     <!-- Contact Information below the name -->
     <div class="contact-info">
-        <p>+1 (778)-676-6178 |
+        <p>Phone: +1 (778)-676-6178 | Email: 
             <a href="mailto:bruce.lcr@outlook.com">bruce.lcr@outlook.com</a> |
             <a href="mailto:c42lin@uwaterloo.ca">c42lin@uwaterloo.ca</a>
         </p>
@@ -117,7 +116,7 @@
     </div>
 </header>
 
-<!-- Display the profile photo at the top and center -->
+<!-- Display the profile photo at the top and center, keep original shape -->
 <img src="myPhoto.jpg" alt="Bruce Lin's Photo" class="profile">
 
 <!-- Description box below the profile photo -->
