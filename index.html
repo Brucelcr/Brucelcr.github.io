@@ -19,9 +19,12 @@
         }
         img.profile {
             margin-top: 20px;
-            width: 150px; /* Set the desired width for the profile photo */
-            height: 150px; /* Set the desired height for the profile photo */
-            border-radius: 50%; /* To make the image circular */
+            width: 150px; /* 控制头像宽度 */
+            height: 150px; /* 控制头像高度 */
+            border-radius: 50%; /* 将头像设置为圆形 */
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
         img.resume {
             margin-top: 20px;
@@ -30,7 +33,7 @@
             height: auto;
         }
         .download-link {
-            display: block;
+            display: inline-block;
             margin: 30px auto;
             padding: 10px 20px;
             background-color: #333;
@@ -38,7 +41,6 @@
             text-decoration: none;
             font-size: 18px;
             border-radius: 5px;
-            position: relative;
         }
         .download-link:hover {
             background-color: #555;
@@ -51,13 +53,13 @@
     <h1>Canran (Bruce) Lin</h1>
 </header>
 
-<!-- Display the profile photo at the top with a smaller size -->
+<!-- 头像在页面顶部，并居中显示 -->
 <img src="myImage.jpg" alt="Bruce Lin's Photo" class="profile">
 
-<!-- Display the converted resume image -->
+<!-- 显示简历图片 -->
 <img src="BruceResume.jpg" alt="Bruce Lin's Resume" class="resume">
 
-<!-- Provide a download link for the resume, placed at the bottom -->
+<!-- 在页面底部提供下载链接 -->
 <a href="BruceResume.pdf" class="download-link" download>Download My Resume</a>
 
 </body>
