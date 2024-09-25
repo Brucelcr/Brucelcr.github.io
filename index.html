@@ -7,37 +7,21 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            text-align: center;
         }
         header {
             background-color: #333;
             color: white;
             padding: 20px 0;
         }
-        header h1 {
-            margin: 0;
-        }
         img {
-            border-radius: 50%;
-            width: 200px;
-            height: 200px;
             margin-top: 20px;
-        }
-        .resume-container {
-            margin: 20px auto;
-            padding: 20px;
-            width: 80%;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .resume-container object {
             width: 100%;
-            height: 1100px; /* Adjust height as needed */
-            border: none;
+            max-width: 800px;
+            height: auto;
         }
         .download-link {
             display: inline-block;
@@ -63,12 +47,8 @@
 <!-- Display the profile photo -->
 <img src="myImage.jpg" alt="Bruce Lin's Photo">
 
-<div class="resume-container">
-    <!-- Embe=d the PDF resume directly into the webpage -->
-    <object data="BruceResume.pdf" type="application/pdf">
-        <p>It appears you don't have a PDF plugin for this browser. You can <a href="BruceResume.pdf">click here to download the PDF file.</a></p>
-    </object>
-</div>
+<!-- Display the converted resume image -->
+<img src="resume-image.png" alt="Bruce Lin's Resume">
 
 <!-- Provide a download link for the resume -->
 <a href="BruceResume.pdf" class="download-link" download>Download My Resume</a>
