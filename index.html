@@ -17,6 +17,21 @@
             color: white;
             padding: 20px 0;
         }
+        header h1 {
+            margin: 0;
+        }
+        .links {
+            margin-top: 10px;
+        }
+        .links a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: underline; /* 添加下划线 */
+            font-size: 18px;
+        }
+        .links a:hover {
+            text-decoration: none; /* 鼠标悬停时移除下划线 */
+        }
         img.profile {
             margin-top: 20px;
             width: 150px; /* 控制头像宽度 */
@@ -26,10 +41,27 @@
             margin-left: auto;
             margin-right: auto;
         }
+        .description-box {
+            margin-top: 15px;
+            padding: 10px;
+            width: 80%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .description-box p {
+            margin: 0;
+            font-size: 16px;
+            color: #333;
+        }
         img.resume {
             margin-top: 20px;
             width: 100%;
-            max-width: 800px;
+            max-width: 1000px; /* 增加简历图片的最大宽度 */
             height: auto;
             display: block;
             margin-left: auto;
@@ -56,12 +88,22 @@
 
 <header>
     <h1>Canran (Bruce) Lin</h1>
+    <div class="links">
+        <a href="https://github.com/Brucelcr" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/bruce-lin-186752308/" target="_blank">LinkedIn</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a> <!-- Replace with your Instagram link -->
+    </div>
 </header>
 
 <!-- 头像在页面顶部，并居中显示 -->
 <img src="myImage.jpg" alt="Bruce Lin's Photo" class="profile">
 
-<!-- 显示简历图片并居中 -->
+<!-- 文字框显示在头像下方 -->
+<div class="description-box">
+    <p>Hi, I'm Canran (Bruce) Lin, a Computer Science student at the University of Waterloo. I have experience in AI development, web scraping, and translation tools. I enjoy working with Python, C, and web technologies.</p>
+</div>
+
+<!-- 显示简历图片并居中，且增加宽度 -->
 <img src="BruceResume.jpg" alt="Bruce Lin's Resume" class="resume">
 
 <!-- 将下载按钮居中放置在页面的最下方 -->
