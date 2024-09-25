@@ -1,8 +1,145 @@
-<p>Hello 大家好</p>
-<p>我是霸都丶傲天，这是我的个人网站。 </p>
-<p>很高兴你来到这里, 你可以在以下的网站找到我</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Canran (Bruce) Lin</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 40px;
+        }
+        h1, h2, h3, h4, h5 {
+            color: #000;
+        }
+        .container {
+            text-align: center;
+        }
+        .skills, .experience, .projects, .education {
+            margin-bottom: 20px;
+        }
+        .custom-entry {
+            display: flex;
+            justify-content: space-between;
+        }
+        .contact-info {
+            font-size: 0.9em;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .github-icon, .linkedin-icon {
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
 
-<ul>
-  <li> <a href="https://www.zhihu.com/people/AJLoveChina">知乎</a> </li>
-  <li> <a href="http://hejie.nigeerhuo.com">我的博客(已经不更细了,现在在知乎写文章)</a> </li>
-</ul>
+<div class="container">
+    <h1>Canran (Bruce) Lin</h1>
+    <p class="contact-info">
+        +1 7786766178 | <a href="mailto:bruce.lcr@outlook.com">bruce.lcr@outlook.com</a> | 
+        <a href="mailto:c42lin@uwaterloo.ca">c42lin@uwaterloo.ca</a> | Waterloo, ON, CAN <br>
+        <a href="https://github.com/Brucelcr" class="github-icon">GitHub</a> | 
+        <a href="https://linkedin.com/in/bruce-lin-186752308/" class="linkedin-icon">LinkedIn</a>
+    </p>
+</div>
+
+<hr>
+
+<section class="skills">
+    <h2>Skills</h2>
+    <h3>Technical Skills</h3>
+    <ul>
+        <li>Programming Languages: Python, C, Java, R, HTML, CSS, JavaScript, PHP, Git, SQL, Racket</li>
+        <li>Proficient with Microsoft Office, Markdown, LaTeX</li>
+        <li>Proficient with VScode; have experience in Vim, PyCharm, Eclipse and IntelliJ IDEA</li>
+        <li>Proficient with using Windows 10/11, MacOS, and Linux (Ubuntu).</li>
+    </ul>
+
+    <h3>Soft Skills</h3>
+    <ul>
+        <li>Fluent in both English (IELTs 7 in Grade 11) and Chinese (Native) and know a little bit of French</li>
+        <li>Analytical Thinking; Adaptability; Conflict resolution; Effective Communication; Public Speaking; Teamwork & Collaboration, Leadership; Problem Solving; Time Management</li>
+    </ul>
+</section>
+
+<hr>
+
+<section class="experience">
+    <h2>Experience</h2>
+
+    <div class="custom-entry">
+        <div>
+            <h3><a href="https://en.wikipedia.org/wiki/Rockchip" style="color:blue">Rockchip</a></h3>
+            <p>Graphics Display Platform Center Intern, AI Recognition Group</p>
+        </div>
+        <p>09/2024 ‐ present</p>
+    </div>
+    <p>CN</p>
+    <ul>
+        <li>Rockchip is an AI chip company, and my current team is working on an AI camera project focused on image and sound recognition.</li>
+        <li>Independently completed a video scraping project and a speech recognition and translation project.</li>
+        <li>Collaborating with my team to develop an original translation model.</li>
+        <li>Transferable skills: Python, Linux, Web Scraping, scripting, teamwork, critical thinking.</li>
+    </ul>
+
+    <div class="custom-entry">
+        <div>
+            <h3>Entrepreneurial Project: Resource Integration Website Development</h3>
+            <p>Project Leader & Front-End Developer</p>
+        </div>
+        <p>2024--Present</p>
+    </div>
+    <ul>
+        <li>Leading the development of a platform for connecting technical workers (e.g., gardeners, plumbers, electricians).</li>
+        <li>Using React, Flask, MySQL; working with HTML, CSS, JavaScript, SQL, Python.</li>
+        <li>Addressed challenges in web development, UI design, and partnerships with incubators.</li>
+        <li>Coordinated the team and initiated work with Waterloo's Velocity incubator for front-end development.</li>
+    </ul>
+</section>
+
+<hr>
+
+<section class="projects">
+    <h2>Side Projects</h2>
+
+    <div>
+        <h3>VideoScraping - Automated Video Scraping from Bilibili</h3>
+        <a href="https://github.com/Brucelcr/VideoScraping">(GitHub)</a> <span>2024</span>
+        <ul>
+            <li>Developed a tool to automate and batch scrape videos and related information from Bilibili, the Chinese equivalent of YouTube, using keyword-based queries.</li>
+            <li>Fully automated process requiring only a keyword input, eliminating the need for manual bulk entry of URLs, thereby greatly reducing manual workload.</li>
+            <li>Significantly enhances video retrieval efficiency, proving highly beneficial for batch video analysis.</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>GetMp3SubtAndTrans - Subtitle Recognition and Translation</h3>
+        <a href="https://github.com/Brucelcr/GetMp3SubAndTrans">(GitHub)</a> <span>2024</span>
+        <ul>
+            <li>Implemented a script that utilizes OpenAI's Whisper to extract subtitles from videos and translates them into English using DeepSeek, an AI translation model.</li>
+            <li>Achieves high accuracy and speed with the new model, offering rapid and precise subtitle recognition and translation.</li>
+            <li>Capable of processing multiple videos simultaneously, resulting in a substantial increase in operational efficiency.</li>
+            <li>Integrates subtitle recognition and translation, greatly improving ease of use and operational portability.</li>
+        </ul>
+    </div>
+</section>
+
+<hr>
+
+<section class="education">
+    <h2>Education</h2>
+    <div class="custom-entry">
+        <h3><a href="https://www.uwaterloo.ca/">University of Waterloo</a></h3>
+        <p>BSc Computer Science</p>
+        <p>2023--Present</p>
+    </div>
+</section>
+
+</body>
+</html>
