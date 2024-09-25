@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canran (Bruce) Lin - Personal Page</title>
+    <title>Canran (Bruce) Lin - Resume</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
             margin: 0;
             padding: 0;
+            text-align: center;
             background-color: #f4f4f4;
         }
         header {
@@ -26,8 +26,14 @@
             height: 200px;
             margin-top: 20px;
         }
-        .resume-link {
-            display: block;
+        iframe {
+            width: 80%;
+            height: 80vh;
+            border: none;
+            margin-top: 20px;
+        }
+        .download-link {
+            display: inline-block;
             margin: 20px 0;
             padding: 10px 20px;
             background-color: #333;
@@ -36,7 +42,7 @@
             font-size: 18px;
             border-radius: 5px;
         }
-        .resume-link:hover {
+        .download-link:hover {
             background-color: #555;
         }
     </style>
@@ -44,12 +50,18 @@
 <body>
 
 <header>
-    <h1>Canran (Bruce) Lin</h1>
+    <h1>Canran (Bruce) Lin - Resume</h1>
 </header>
 
+<!-- Display the profile photo -->
+<img src="myImage.jpg" alt="Bruce Lin's Photo">
+
 <main>
-    <img src="myImage.jpg" alt="a photo of me">
-    <a href="BruceResume.pdf" class="resume-link" target="_blank">View My Resume (PDF)</a>
+    <!-- Display the PDF resume directly in the browser -->
+    <iframe src="BruceResume.pdf"></iframe>
+    
+    <!-- Provide a download link for the resume -->
+    <a href="BruceResume.pdf" class="download-link" download>Download My Resume</a>
 </main>
 
 </body>
