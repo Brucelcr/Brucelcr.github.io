@@ -31,9 +31,12 @@
             width: 100%;
             max-width: 800px;
             height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
         .download-link {
-            display: inline-block;
+            display: block;
             margin: 30px auto;
             padding: 10px 20px;
             background-color: #333;
@@ -41,6 +44,8 @@
             text-decoration: none;
             font-size: 18px;
             border-radius: 5px;
+            width: fit-content;
+            position: relative;
         }
         .download-link:hover {
             background-color: #555;
@@ -56,10 +61,10 @@
 <!-- 头像在页面顶部，并居中显示 -->
 <img src="myImage.jpg" alt="Bruce Lin's Photo" class="profile">
 
-<!-- 显示简历图片 -->
+<!-- 显示简历图片并居中 -->
 <img src="BruceResume.jpg" alt="Bruce Lin's Resume" class="resume">
 
-<!-- 在页面底部提供下载链接 -->
+<!-- 将下载按钮居中放置在页面的最下方 -->
 <a href="BruceResume.pdf" class="download-link" download>Download My Resume</a>
 
 </body>
