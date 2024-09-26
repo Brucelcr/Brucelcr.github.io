@@ -25,12 +25,14 @@
             height: auto;
         }
         .name {
-            text-align: center;
             font-size: 24px;
+            text-align: center;
+            flex-grow: 1;
             margin: 0;
-            flex-grow: 1; /* 使名字位于中间 */
         }
         .links {
+            display: flex;
+            justify-content: flex-end;
             margin-right: 20px;
         }
         .links a {
@@ -47,13 +49,13 @@
 <body>
 
 <header>
-    <!-- 左边放置滑铁卢大学的图标 -->
+    <!-- 滑铁卢大学的图标在左边 -->
     <img src="uwicon.png" alt="University of Waterloo Icon">
 
-    <!-- 中间居中显示名字 -->
+    <!-- 中间居中显示名字，保证中轴线和页面中轴线对齐 -->
     <h1 class="name">Canran (Bruce) Lin</h1>
 
-    <!-- 右边社交链接 -->
+    <!-- 右边显示社交链接，水平线和黑色框中线重合 -->
     <div class="links">
         <a href="https://github.com/Brucelcr" target="_blank">GitHub</a>
         <a href="https://linkedin.com/in/bruce-lin-186752308/" target="_blank">LinkedIn</a>
