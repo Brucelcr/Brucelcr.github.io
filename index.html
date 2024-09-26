@@ -22,7 +22,7 @@
             position: absolute;
             left: 20px;
             top: 50%;  /* Move icon vertically */
-            transform: translateY(-50%); /* Center vertically */
+            transform: translateY(-50%); /* Center icon vertically */
             width: 50px; /* Icon size */
             height: auto;
         }
@@ -33,9 +33,12 @@
         .links {
             position: absolute;
             right: 20px;
+            top: 50%;  /* Move links vertically */
+            transform: translateY(-50%);  /* Center them vertically */
+            display: flex;
+            gap: 10px;  /* Add spacing between links */
         }
         .links a {
-            margin: 0 10px;
             color: white;
             text-decoration: underline;
             font-size: 18px;
