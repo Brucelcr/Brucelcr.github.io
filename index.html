@@ -15,24 +15,21 @@
             background-color: #333;
             color: white;
             padding: 20px 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            text-align: center;
+            text-align: center; /* 确保标题居中对齐 */
         }
         header img {
-            margin-left: 20px;
+            position: absolute;
+            left: 20px;
             width: 50px; /* 图标大小 */
             height: auto;
         }
         .name {
-            flex-grow: 1;
-            text-align: center;
             font-size: 28px; /* 字体稍微加大 */
             margin: 0;
         }
         .links {
-            margin-right: 20px;
+            position: absolute;
+            right: 20px;
         }
         .links a {
             margin: 0 10px;
@@ -97,32 +94,32 @@
 <body>
 
 <header>
-    <!-- 滑铁卢大学的图标在左边 -->
+    <!-- 左边放置滑铁卢大学的图标 -->
     <img src="uwicon.png" alt="University of Waterloo Icon">
 
-    <!-- 中间显示名字，并保持在黑色框中 -->
+    <!-- 中间居中显示名字 -->
     <h1 class="name">Canran (Bruce) Lin</h1>
 
-    <!-- 右边显示社交链接 -->
+    <!-- 右边社交链接 -->
     <div class="links">
         <a href="https://github.com/Brucelcr" target="_blank">GitHub</a>
         <a href="https://linkedin.com/in/bruce-lin-186752308/" target="_blank">LinkedIn</a>
-        <a href="https://instagram.com" target="_blank">Instagram</a> <!-- Replace with your Instagram link -->
+        <a href="https://instagram.com" target="_blank">Instagram</a>
     </div>
 </header>
 
-<!-- Display the profile photo at the top and center, keep original shape -->
+<!-- 头像居中放在名字下方 -->
 <img src="myP.jpg" alt="Bruce Lin's Photo" class="profile">
 
-<!-- Description box below the profile photo -->
+<!-- 简介框放在头像下方 -->
 <div class="description-box">
     <p>Hi, I'm Canran (Bruce) Lin, a Computer Science student at the University of Waterloo. I have experience in AI development, web scraping, and translation tools. I enjoy working with Python, C, and web technologies.</p>
 </div>
 
-<!-- Display the resume image and center it, with increased width -->
+<!-- 简历图片展示在页面中 -->
 <img src="BruceResume.jpg" alt="Bruce Lin's Resume" class="resume">
 
-<!-- Download link at the bottom -->
+<!-- 简历下载按钮 -->
 <a href="BruceResume.pdf" class="download-link" download>Download My Resume</a>
 
 </body>
