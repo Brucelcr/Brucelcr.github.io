@@ -74,18 +74,18 @@
         .resume-container {
             width: 100%;
             max-width: 1000px;
-            /* Remove height to show full image */
-            overflow: hidden;
+            height: auto;
             margin: 20px auto;
         }
         img.resume {
             width: 100%;
-            object-fit: cover; /* Ensures the image scales nicely */
-            object-position: 0 -90px; /* Adjust the vertical position to "crop" the top part less */
+            object-fit: cover;
+            object-position: 0 -90px;
+            filter: grayscale(100%); /* Make the resume image black and white */
         }
         .download-link {
             display: block;
-            margin: 30px auto;
+            margin: 10px auto; /* Reduce margin to remove extra space */
             padding: 10px 20px;
             background-color: #333;
             color: white;
@@ -117,7 +117,7 @@
     <p>I'm a Computer Science student at the University of Waterloo, and I just finished my 2A term. Currently, I’m interning at Rockchip, a company that develops AI chips. I'm actively seeking an internship for the January to April term next year, and I hope you will consider hiring me.</p>
 </div>
 
-<!-- Resume image container with full image -->
+<!-- Resume image container with black-and-white image -->
 <div class="resume-container">
     <img src="BruceResume.jpg" alt="Bruce Lin's Resume" class="resume">
 </div>
