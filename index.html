@@ -15,16 +15,19 @@
             background-color: #333;
             color: white;
             padding: 20px 0;
-            text-align: center; /* 确保标题居中对齐 */
+            text-align: center; /* Ensure title stays centered */
+            position: relative; /* Needed for absolute positioning of child elements */
         }
         header img {
             position: absolute;
             left: 20px;
-            width: 50px; /* 图标大小 */
+            top: 50%;  /* Move icon vertically */
+            transform: translateY(-50%); /* Center vertically */
+            width: 50px; /* Icon size */
             height: auto;
         }
         .name {
-            font-size: 28px; /* 字体稍微加大 */
+            font-size: 28px; /* Slightly larger font */
             margin: 0;
         }
         .links {
@@ -94,13 +97,13 @@
 <body>
 
 <header>
-    <!-- 左边放置滑铁卢大学的图标 -->
+    <!-- Left: University of Waterloo icon -->
     <img src="uwicon.png" alt="University of Waterloo Icon">
 
-    <!-- 中间居中显示名字 -->
+    <!-- Center: Name -->
     <h1 class="name">Canran (Bruce) Lin</h1>
 
-    <!-- 右边社交链接 -->
+    <!-- Right: Social links -->
     <div class="links">
         <a href="https://github.com/Brucelcr" target="_blank">GitHub</a>
         <a href="https://linkedin.com/in/bruce-lin-186752308/" target="_blank">LinkedIn</a>
@@ -108,18 +111,18 @@
     </div>
 </header>
 
-<!-- 头像居中放在名字下方 -->
+<!-- Centered profile picture -->
 <img src="myP.jpg" alt="Bruce Lin's Photo" class="profile">
 
-<!-- 简介框放在头像下方 -->
+<!-- Description box under the profile picture -->
 <div class="description-box">
     <p>Hi, I'm Canran (Bruce) Lin, a Computer Science student at the University of Waterloo. I have experience in AI development, web scraping, and translation tools. I enjoy working with Python, C, and web technologies.</p>
 </div>
 
-<!-- 简历图片展示在页面中 -->
+<!-- Resume image display -->
 <img src="BruceResume.jpg" alt="Bruce Lin's Resume" class="resume">
 
-<!-- 简历下载按钮 -->
+<!-- Resume download button -->
 <a href="BruceResume.pdf" class="download-link" download>Download My Resume</a>
 
 </body>
