@@ -51,14 +51,21 @@
             justify-content: space-between;
             align-items: center;
             margin-top: 20px;
+            max-width: 1000px;
             width: 100%;
-            max-width: 1000px; /* Matches the resume container width */
             margin-left: auto;
             margin-right: auto;
         }
         .profile-container img {
             width: 150px;
             height: auto;
+        }
+        /* Adjust margins to move the images inward */
+        .profile-container img:first-child {
+            margin-left: 30px; /* Move the left image inward */
+        }
+        .profile-container img:last-child {
+            margin-right: 30px; /* Move the right image inward */
         }
         .description-box {
             margin-top: 15px;
@@ -117,7 +124,7 @@
     </div>
 </header>
 
-<!-- Profile images container with exact alignment to resume edges -->
+<!-- Profile images container with manual inward positioning -->
 <div class="profile-container">
     <img src="yc1.jpg" alt="Left Image" class="profile">
     <img src="rkp.jpg" alt="Center Image" class="profile">
