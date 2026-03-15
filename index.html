@@ -55,38 +55,6 @@
       padding: 28px 20px 64px;
     }
 
-    .hero-banner {
-      position: relative;
-      overflow: hidden;
-      border-radius: 30px;
-      margin-bottom: 18px;
-      background:
-        linear-gradient(180deg, rgba(255,255,255,0.82), rgba(255,255,255,0.68)),
-        url('uwlogo.jpg') center/60% auto no-repeat,
-        rgba(255,255,255,0.6);
-      border: 1px solid rgba(107,83,22,0.12);
-      box-shadow: 0 12px 30px rgba(41, 33, 14, 0.08);
-      min-height: 112px;
-    }
-
-    .hero-banner::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(90deg, rgba(243,241,234,0.88) 0%, rgba(243,241,234,0.45) 35%, rgba(243,241,234,0.32) 65%, rgba(243,241,234,0.8) 100%);
-      pointer-events: none;
-    }
-
-    .hero-banner-inner {
-      position: relative;
-      z-index: 1;
-      min-height: 112px;
-      display: flex;
-      align-items: flex-start;
-      justify-content: flex-end;
-      padding: 14px 18px;
-    }
-
     .topbar {
       display: flex;
       justify-content: flex-end;
@@ -194,14 +162,7 @@
       border: 1px solid rgba(107,83,22,0.12);
     }
 
-    .hero-photo-note {
-      margin-top: 10px;
-      text-align: center;
-      font-size: 0.86rem;
-      color: var(--muted);
-      font-weight: 600;
-      letter-spacing: 0.03em;
-    }
+    
 
     .hero-badge {
       flex-shrink: 0;
@@ -217,13 +178,12 @@
       box-shadow: inset 0 1px 0 rgba(255,255,255,0.8);
     }
 
-    .shield {
-      width: 20px;
-      height: 24px;
-      background: linear-gradient(180deg, var(--uw-gold), var(--uw-gold-deep));
-      clip-path: polygon(50% 0%, 92% 14%, 92% 56%, 50% 100%, 8% 56%, 8% 14%);
-      border: 1px solid rgba(0,0,0,0.12);
-      box-shadow: 0 4px 12px rgba(140,109,20,0.22);
+    .uw-crest {
+      width: 22px;
+      height: 26px;
+      object-fit: contain;
+      display: block;
+      flex-shrink: 0;
     }
 
     h1 {
@@ -422,8 +382,6 @@
       .hero, .section { padding: 22px 18px; border-radius: 20px; }
       .two-col { grid-template-columns: 1fr; }
       .personal-gallery { grid-template-columns: 1fr; }
-      .hero-banner { min-height: 92px; border-radius: 20px; background-size: 82% auto; }
-      .hero-banner-inner { min-height: 92px; padding: 10px 12px; justify-content: center; align-items: flex-start; }
       .entry-header { align-items: flex-start; }
       .hero::after { right: 16px; bottom: 10px; }
       .hero-top { flex-direction: column; align-items: flex-start; }
@@ -438,19 +396,15 @@
 <body>
   <div class="background-grid"></div>
   <main class="container">
-    <section class="hero-banner">
-      <div class="hero-banner-inner">
-        <div class="topbar">
-          <button id="langToggle" class="lang-btn">切换到中文 / Switch to Chinese</button>
-        </div>
-      </div>
-    </section>
+    <div class="topbar">
+      <button id="langToggle" class="lang-btn">切换到中文 / Switch to Chinese</button>
+    </div>
 
     <section class="hero">
       <div class="hero-top">
         <div class="hero-text">
           <div class="hero-badge">
-            <span class="shield"></span>
+            <img class="uw-crest" src="uwicon.png" alt="University of Waterloo crest" />
             <span data-i18n="heroBadge">University of Waterloo · BCS + BMath</span>
           </div>
           <h1 id="heroName">Canran (Bruce) Lin</h1>
@@ -462,7 +416,6 @@
         <div class="hero-photo-wrap">
           <div class="hero-photo-card">
             <img class="hero-photo" src="personpic.jpg" alt="Canran Bruce Lin profile photo" />
-            <div class="hero-photo-note" data-i18n="photoNote">Replace with your GitHub image</div>
           </div>
         </div>
       </div>
@@ -645,7 +598,6 @@
         heroName: 'Canran (Bruce) Lin',
         heroBadge: 'University of Waterloo · BCS + BMath',
         heroSubtitle: 'University of Waterloo student with a Bachelor of Computer Science background and current training in Mathematical Economics. Interested in interdisciplinary work combining programming, quantitative analysis, and applied research.',
-        photoNote: 'Replace with your GitHub image',
         phoneLabel: 'Phone:',
         emailLabel: 'Email:',
         locationLabel: 'Location:',
@@ -712,7 +664,6 @@
         heroName: '林灿然',
         heroBadge: '滑铁卢大学 · BCS + BMath',
         heroSubtitle: '现就读于滑铁卢大学，具有计算机科学学位背景，并正在接受数理经济方向训练。关注编程、定量分析与应用研究相结合的跨学科工作。',
-        photoNote: '上传图片后这里会显示头像',
         phoneLabel: '电话：',
         emailLabel: '邮箱：',
         locationLabel: '地点：',
