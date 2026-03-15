@@ -56,12 +56,16 @@
     }
 
     .topbar {
+      display: none;
+    }
+
+    .hero-badge-row {
       display: flex;
-      justify-content: flex-end;
       align-items: center;
-      margin-bottom: 18px;
-      gap: 12px;
+      justify-content: space-between;
+      gap: 14px;
       flex-wrap: wrap;
+      margin-bottom: 8px;
     }
 
     .lang-btn {
@@ -69,13 +73,15 @@
       background: linear-gradient(135deg, var(--uw-gold) 0%, var(--uw-gold-deep) 100%);
       color: #1f1a0d;
       font-weight: 800;
-      font-size: 1rem;
-      padding: 14px 22px;
+      font-size: 0.98rem;
+      padding: 15px 22px;
       border-radius: 999px;
       cursor: pointer;
       box-shadow: 0 10px 28px rgba(140, 109, 20, 0.2);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
       backdrop-filter: blur(8px);
+      white-space: nowrap;
+      flex-shrink: 0;
     }
 
     .lang-btn:hover {
@@ -165,29 +171,31 @@
     
 
     .hero-badge {
-      flex-shrink: 0;
+      flex: 1 1 420px;
       display: inline-flex;
       align-items: center;
-      gap: 10px;
-      padding: 10px 14px;
-      background: rgba(255,255,255,0.72);
+      gap: 12px;
+      padding: 14px 18px;
+      background: rgba(255,255,255,0.78);
       border: 1px solid rgba(107,83,22,0.12);
       border-radius: 999px;
       color: var(--accent);
-      font-weight: 700;
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.8);
+      font-weight: 800;
+      font-size: 1.02rem;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.85);
+      min-height: 62px;
     }
 
     .uw-crest {
-      width: 22px;
-      height: 26px;
+      width: 30px;
+      height: 34px;
       object-fit: contain;
       display: block;
       flex-shrink: 0;
     }
 
     h1 {
-      margin: 10px 0 0;
+      margin: 22px 0 0;
       font-size: clamp(2.8rem, 6.4vw, 5.6rem);
       line-height: 0.96;
       letter-spacing: -0.055em;
@@ -385,10 +393,11 @@
       .entry-header { align-items: flex-start; }
       .hero::after { right: 16px; bottom: 10px; }
       .hero-top { flex-direction: column; align-items: flex-start; }
+      .hero-badge-row { flex-direction: column; align-items: stretch; }
+      .hero-badge { width: 100%; min-height: 58px; }
       .hero-photo-wrap { width: 100%; justify-content: center; }
       .hero-photo-card { width: min(260px, 100%); }
-      .topbar { justify-content: center; margin-bottom: 0; }
-      .lang-btn { width: 100%; max-width: 280px; }
+      .lang-btn { width: 100%; max-width: none; }
     }
     }
   </style>
@@ -396,16 +405,15 @@
 <body>
   <div class="background-grid"></div>
   <main class="container">
-    <div class="topbar">
-      <button id="langToggle" class="lang-btn">切换到中文 / Switch to Chinese</button>
-    </div>
-
     <section class="hero">
       <div class="hero-top">
         <div class="hero-text">
-          <div class="hero-badge">
-            <img class="uw-crest" src="uwicon.png" alt="University of Waterloo crest" />
-            <span data-i18n="heroBadge">University of Waterloo · BCS + BMath</span>
+          <div class="hero-badge-row">
+            <div class="hero-badge">
+              <img class="uw-crest" src="uwicon.png" alt="University of Waterloo crest" />
+              <span data-i18n="heroBadge">University of Waterloo · BCS + BMath</span>
+            </div>
+            <button id="langToggle" class="lang-btn">中文 / EN</button>
           </div>
           <h1 id="heroName">Canran (Bruce) Lin</h1>
           <p class="subtitle" data-i18n="heroSubtitle">
@@ -743,7 +751,7 @@
         heroName.textContent = translations[lang].heroName;
       }
       const btn = document.getElementById('langToggle');
-      btn.textContent = lang === 'en' ? '切换到中文 / Switch to Chinese' : 'Switch to English / 切换到英文';
+      btn.textContent = lang === 'en' ? '中文 / EN' : 'EN / 中文';
       document.documentElement.lang = lang === 'en' ? 'en' : 'zh-CN';
     };
 
